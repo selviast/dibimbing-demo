@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "515ff9f5-f5ee-4907-acb2-54f2e0cbf290",
+		"name": "Sport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35086436"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"syukran@gmail.com\",\n    \"password\": \"syukran123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sport-reservation-2-api-bootcamp.do.dibimbing.id/api/v1/login",
+					"protocol": "https",
+					"host": [
+						"sport-reservation-2-api-bootcamp",
+						"do",
+						"dibimbing",
+						"id"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"syukran@gmail.com\",\n    \"password\": \"syukran123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sport-reservation-2-api-bootcamp.do.dibimbing.id/api/v1/login",
+							"protocol": "https",
+							"host": [
+								"sport-reservation-2-api-bootcamp",
+								"do",
+								"dibimbing",
+								"id"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Jul 2025 06:21:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, must-revalidate"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "expires",
+							"value": "-1"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"1819|UIPn1UsAvZUAGx1mrCDWQULhh5ucViyHyTBZh4rv90142f54\",\n        \"name\": \"Syukran\",\n        \"email\": \"syukran@gmail.com\"\n    },\n    \"message\": \"User login successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"syukran+1234@gmail.com\",\n    \"name\": \"Syukran\",\n    \"password\": \"syukron\",\n    \"c_password\":\"syukron\",\n    \"role\": \"user\",\n    \"phone_number\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sport-reservation-2-api-bootcamp.do.dibimbing.id/api/v1/register",
+					"protocol": "https",
+					"host": [
+						"sport-reservation-2-api-bootcamp",
+						"do",
+						"dibimbing",
+						"id"
+					],
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"syukran+1234@gmail.com\",\n    \"name\": \"Syukran\",\n    \"password\": \"syukron\",\n    \"c_password\":\"syukron\",\n    \"role\": \"user\",\n    \"phone_number\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sport-reservation-2-api-bootcamp.do.dibimbing.id/api/v1/register",
+							"protocol": "https",
+							"host": [
+								"sport-reservation-2-api-bootcamp",
+								"do",
+								"dibimbing",
+								"id"
+							],
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Jul 2025 06:28:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, must-revalidate"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "expires",
+							"value": "-1"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"Syukran\"\n    },\n    \"message\": \"User register successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://sport-reservation-2-api-bootcamp.do.dibimbing.id/api/v1/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"syukran@gmail.com\",\n    \"password\": \"syukran123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sport-reservation-2-api-bootcamp.do.dibimbing.id/api/v1/login",
+					"protocol": "https",
+					"host": [
+						"sport-reservation-2-api-bootcamp",
+						"do",
+						"dibimbing",
+						"id"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
